@@ -1,0 +1,270 @@
+﻿"Issue Id","Project","Tags","Summary","Reporter","Created","Updated","Resolved","Priority","Type","State","Assignee","Sprints","Ideal days","Original estimation","Story points","Environment","QASE TC # (only for bug)","Description","Votes"
+"G13-229","group1.3","Star","Close the app: task list clears up","anna_avocado","5 Nov 2022","5 Nov 2022",,"Critical","Bug","Open","Unassigned","Нет версии исправления",,,,"Xiaomi MI9, Android 10, Build 1.0","No qase tc # (only for bug)","**Pre-conditions:**
+
+There are some tasks in the list.
+
+
+
+**STR:**
+
+1. Close the app.
+2. Open the app.
+
+   
+
+**Expected result:**
+
+Tasks list isn't changed.
+
+
+
+**Actual result:**
+
+Tasks list is cleared up.","0"
+"G13-228","group1.3","Star","Statistics: zero value for completed tasks","anna_avocado","5 Nov 2022","5 Nov 2022",,"Normal","Bug","Open","Unassigned","Нет версии исправления",,,,"Xiaomi MI9, Android 10, Build 1.0","No qase tc # (only for bug)","**Pre-conditions:**
+
+There are some active and completed tasks in the list.
+
+Statistics screen is opened.
+
+
+
+**Expected result:**
+
+There is a correct statistics for completed tasks.
+
+
+
+**Actual result:**
+
+No statistics for completed tasks (0 value).","0"
+"G13-227","group1.3","Star","New TO-DO: the back button doesn't work","anna_avocado","5 Nov 2022","5 Nov 2022",,"Normal","Bug","Open","Unassigned","Нет версии исправления",,,,"Xiaomi MI9, Android 10, Build 1.0","No qase tc # (only for bug)","**Pre-conditions:**
+
+The new TO-DO screen is opened.
+
+Fields could be filled or empty.
+
+
+
+**STR:**
+
+1. Tap the back button.
+
+**Expected result:**
+
+The main screen opens.
+
+
+
+**Actual result:**
+
+Nothing happens, user remains on the new TO-DO screen.
+
+
+
+
+
+
+","0"
+"G13-226","group1.3","Star","New TO-DO, title field: layout bug when typing text longer than string (31 symbols)","anna_avocado","5 Nov 2022","5 Nov 2022",,"Minor","Bug","Open","Unassigned","Нет версии исправления",,,,"Xiaomi MI9, Android 10, Build 1.0","No qase tc # (only for bug)","**Pre-conditions:**
+
+New to-do screen is opened.
+
+
+
+**STR:**
+
+1. Enter 31 symbols into the title field.
+
+**Expected result:**
+
+Text is fisplayed correctly on the 2 strings.
+
+
+
+**Actual result:**
+
+Layuot bug. Full text connot be shown.","0"
+"G13-225","group1.3","Star","Edit task: the back button doesn't work","anna_avocado","5 Nov 2022","5 Nov 2022",,"Normal","Bug","Open","Unassigned","Нет версии исправления",,,,"Xiaomi MI9, Android 10, Build 1.0","No qase tc # (only for bug)","**Pre-conditions:**
+
+The task was created.
+
+The edit task screen is opened.
+
+
+
+**STR:**
+
+1. Tap the back button.
+
+   
+
+**Expected result:**
+
+The main screen opens.
+
+
+
+**Actual result:**
+
+Nothing happens, user remains on the edit task screen.
+
+
+
+
+
+
+","0"
+"G13-224","group1.3","Star","Unable to edit task + title misprint ""edite""","anna_avocado","5 Nov 2022","5 Nov 2022",,"Major","Bug","Open","Unassigned","Нет версии исправления",,,,"Xiaomi MI9, Android 10, Build 1.0","No qase tc # (only for bug)","**Pre-conditions:**
+
+The task was created.
+
+The task screen is opened.
+
+
+
+**STR:**
+
+1. Tap the edit button.
+2. Make some changes.
+3. Tap the save button.
+
+**Expected result:**
+
+Changes are saved.
+
+
+
+**Actual result:**
+
+Changes aren't saved.
+
+The title misprint ""Edit**e**""
+
+
+
+
+
+
+","0"
+"G13-223","group1.3","Star","Action menu: completed tasks cannot be cleared","anna_avocado","5 Nov 2022","5 Nov 2022",,"Normal","Bug","Open","Unassigned","Нет версии исправления",,,,"Xiaomi MI9, Android 10, Build 1.0","No qase tc # (only for bug)","**Pre-conditions:**
+
+There are some active and completed tasks in the list.
+
+Main screen screen is opened.
+
+
+
+**STR:**
+
+1. Tap the action menu icon.
+2. Tap the clear completed button.
+
+**Expected result:**
+
+Completed tasks are cleared.
+
+
+
+**Actual result:**
+
+Completed tasks aren't cleared.","0"
+"G13-222","group1.3","Star","Action menu: crash after tapping the refresh button","anna_avocado","5 Nov 2022","5 Nov 2022",,"Critical","Bug","Open","Unassigned","Нет версии исправления",,,,"Xiaomi MI9, Android 10, Build 1.0","No qase tc # (only for bug)","**Pre-conditions:**
+
+Main screen is opened.
+
+
+
+**STR:**
+
+1. Tap the action menu icon.
+2. Tap the refresh button.
+
+**Expected result:**
+
+Tasks list is refreshed.
+
+
+
+**Actual result:**
+
+App crashes.","0"
+"G13-219","group1.3","Star","Completed tasks filter: ""You have no complited TO-DOs!"" misprint","anna_avocado","5 Nov 2022","5 Nov 2022",,"Minor","Bug","Open","Unassigned","Нет версии исправления",,,,"Xiaomi MI9, Android 10, Build 1.0","No qase tc # (only for bug)","**Pre-conditions:**
+
+There are no completed tasks.
+
+
+
+**STR:**
+
+1. Tap the filter icon on the main screen.
+2. Tap the completed button
+
+
+
+**Expected result:**
+
+""You have no completed TO-DOs!"" stub is displayed.""
+
+
+
+**Actual result:**
+
+""You have no complited TO-DOs!"" stub is displayed.""
+
+
+
+
+","0"
+"G13-220","group1.3","Star","New TO-DO: tasks with numbers and spec. chars aren't saved, tasks list clears up","anna_avocado","5 Nov 2022","5 Nov 2022",,"Critical","Bug","Open","Unassigned","Нет версии исправления",,,,"Xiaomi MI9, Android 10, Build 1.0","No qase tc # (only for bug)","**Pre-conditions:**
+
+There are some tasks in the list.
+
+New to-do screen is opened.
+
+
+
+**STR:**
+
+1. Enter some text comprising special characters/numbers into the title/task description field.
+2. Tap the save button.
+
+
+
+**Expected result:**
+
+Task is saved.
+
+
+
+**Actual result:**
+
+Task isn't saved.
+
+Tasks list clears up.","0"
+"G13-221","group1.3","Star","Filter, active tasks: completed tasks aren't hidden","anna_avocado","5 Nov 2022","5 Nov 2022",,"Normal","Bug","Open","Unassigned","Нет версии исправления",,,,"Xiaomi MI9, Android 10, Build 1.0","No qase tc # (only for bug)","**Pre-conditions:**
+
+There are some active and completed tasks in the list.
+
+Main screen screen is opened.
+
+
+
+**STR:**
+
+1. Enter some text comprising special characters/numbers into the title/task description field.
+2. Tap the save button.
+
+
+
+**Expected result:**
+
+Task is saved.
+
+
+
+**Actual result:**
+
+Task isn't saved.
+
+Tasks list clears up.","0"

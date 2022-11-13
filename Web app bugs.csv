@@ -1,0 +1,846 @@
+﻿"Issue Id","Project","Tags","Summary","Reporter","Created","Updated","Resolved","Priority","Type","State","Assignee","Sprints","Ideal days","Original estimation","Story points","Environment","QASE TC # (only for bug)","Description","Votes"
+"G13-135","group1.3","","Card with incorrect number is accepted","anna_avocado","29 Sep 2022","5 Oct 2022",,"Normal","Bug","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+Card with incorrect number is accepted.
+
+
+
+**Pre-conditions:**
+
+An item added to the shopping cart. 4 steps of checkout are completed. Credit card payment method is selected.
+
+
+
+**Steps to reproduce:**
+
+1. Open the payment information link on <https://demowebshop.tricentis.com/onepagecheckout>
+
+2. Fill the card data with invalid card number (other fields filled correctly):
+
+   <https://docs.assist.ru/pages/viewpage.action?pageId=5767473>
+
+3. Click the continue button.
+
+4. ""Wrong card number"" message is displayed.
+
+5. Change the card number to another invalid number
+
+**Expected result:**
+
+""Wrong card number"" message is displayed.
+
+
+
+**Actual result:**
+
+Redirected to the confirm order page.","0"
+"G13-140","group1.3","","Improvement: add validations","anna_avocado","29 Sep 2022","29 Sep 2022",,"Normal","Task","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Discuss with PM to add validations for the following fields (checkout):**
+
+E-mail
+
+First name
+
+Last name
+
+Company
+
+Address
+
+Zip / postal code
+
+Fax number
+
+Cardholder name
+
+Card code
+
+PO number","0"
+"G13-132","group1.3","","Cards with insufficient funds, stolen cards, transaction not permitted cards are accepted","anna_avocado","29 Sep 2022","29 Sep 2022",,"Major","Bug","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+Cards with insufficient funds, stolen cards, transaction not permitted cards are accepted.
+
+
+
+**Pre-conditions:**
+
+An item added to the shopping cart. 4 steps of checkout are completed. Credit card payment method is selected.
+
+
+
+**Steps to reproduce:**
+
+1. Open the payment information link on <https://demowebshop.tricentis.com/onepagecheckout>
+2. Fill the card data with insufficient funds/ stolen cards/transaction not permitted cards info from the list:
+
+   <https://docs.assist.ru/pages/viewpage.action?pageId=5767473>
+3. Click the continue button.
+
+
+
+**Expected result:**
+
+Error message is displayed, card isn't accepted.
+
+
+
+**Actual result:**
+
+Redirected to the confirm order page.","0"
+"G13-129","group1.3","","Test credit card with invalid cardholder's name is accepted","anna_avocado","29 Sep 2022","29 Sep 2022",,"Normal","Bug","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+Test credit card with invalid cardholder's name is accepted.
+
+
+
+**Pre-conditions:**
+
+An item added to the shopping cart. 4 steps of checkout are completed. Credit card payment method is selected.
+
+
+
+**Steps to reproduce:**
+
+1. Open the payment information link on <https://demowebshop.tricentis.com/onepagecheckout>
+2. Fill the name field with a random text
+3. Fill the other fields with valid test cards data <https://docs.assist.ru/pages/viewpage.action?pageId=5767473>
+4. Click the continue button.
+
+**Expected result:**
+
+""Wrong cardholder name"" message is displayed.
+
+
+
+**Actual result:**
+
+Redirected to the confirm order page.","0"
+"G13-99","group1.3","","Checkout as guest: First state from the dropdown is selected automatically after selecting US/Canada","anna_avocado","28 Sep 2022","29 Sep 2022",,"Normal","Bug","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+Checkout as guest: first state from the dropdown is selected automatically after selecting US/Canada.
+
+
+
+**Steps to reproduce:**
+
+1. Open the checkout page <https://demowebshop.tricentis.com/onepagecheckout>
+2. Select the country with states: US or Canada
+
+   
+
+**Expected result:**
+
+State/province field doesn't change.
+
+**Actual result:**
+
+State/province field is automatically filled with the first state from the dropdown.","0"
+"G13-96","group1.3","","Password recovery: E-mail with instructions isn't delivered ","anna_avocado","28 Sep 2022","29 Sep 2022",,"Major","Bug","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+E-mail with instructions isn't delivered while trying to recover a password.
+
+
+
+**Pre-conditions:**
+
+The user is already registered.
+
+
+
+**Steps to reproduce:**
+
+1. Open the login page <https://demowebshop.tricentis.com/login>
+2. Click the ""Forgot password"" link.
+3. Fill the e-mail field.
+4. Click the recover button.
+
+   
+
+**Expected result:**
+
+Email with instructions is delivered to the specified e-mail.
+
+
+
+**Actual result:**
+
+Email with instructions isn't delivered to the specified e-mail.","0"
+"G13-94","group1.3","","Estimate shipping: Shipping price isn't estimated with any input values","anna_avocado","27 Sep 2022","29 Sep 2022",,"Normal","Bug","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+Shipping price isn't estimated with any input values (both valid and invalid zip-codes).
+
+
+
+**Pre-conditions:**
+
+An item added to the shopping cart.
+
+
+
+**Steps to reproduce:**
+
+1. Open <https://demowebshop.tricentis.com/cart>
+2. Select country, state, zip-code.
+3. Click the Estimate shipping button without selecting a country.
+
+**Expected result:**
+
+Shipping price is estimated.
+
+
+
+**Actual result:**
+
+Shipping price is esimated with zero values.","0"
+"G13-93","group1.3","","Estimate shipping: No error message is displayed after clicking the Estimate shipping button without selecting a country","anna_avocado","27 Sep 2022","29 Sep 2022",,"Normal","Bug","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+No error message is displayed after clicking the Estimate shipping button without selecting a country.
+
+
+
+**Pre-conditions:**
+
+An item added to the shopping cart.
+
+
+
+**Steps to reproduce:**
+
+1. Open <https://demowebshop.tricentis.com/cart>
+2. Click the Estimate shipping button without selecting a country.
+
+   
+
+**Expected result:**
+
+""Please select a country to estimate shipping"" message is displayed.
+
+
+
+**Actual result:**
+
+Shipping price is esimated with zero values.","0"
+"G13-90","group1.3","","""The coupon code you entered couldn't be applied to your order"" message is displayed for an emty/invalid gift card code","anna_avocado","27 Sep 2022","29 Sep 2022",,"Normal","Bug","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+""The **coupon code** you entered couldn't be applied to your order"" message is displayed for an emty/invalid gift card code
+
+
+
+**Pre-conditions:**
+
+An item added to the shopping cart.
+
+
+
+**Steps to reproduce:**
+
+1. Open the shopping cart**.**
+2. Fill the gift card field with invalid code or leave it empty.
+3. Click the ""Add gift card"" button.
+
+
+
+**Expected result:**
+
+""The **gift card number** you entered couldn't be applied to your order"" message is displayed.
+
+
+
+**Actual result:**
+
+""The coupon code you entered couldn't be applied to your order"" message is displayed.","0"
+"G13-89","group1.3","","Item card: total price doesn't change after configuring item's parameters","anna_avocado","27 Sep 2022","29 Sep 2022",,"Normal","Bug","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+Total price doesn't change after configuring item's parameters (for items with configurable parameters).
+
+
+
+**Pre-conditions:**
+
+\-
+
+
+
+**Steps to reproduce:**
+
+1. Open the card of an item with configurable parameters (**[Build your own cheap computer](https://demowebshop.tricentis.com/build-your-cheap-own-computer)).**
+2. Change the parameters.
+
+
+
+**Expected result:**
+
+The price is updated according to configuration.
+
+
+
+**Actual result:**
+
+The price doesn't change.","0"
+"G13-139","group1.3","","Floating bug: System error ","anna_avocado","29 Sep 2022","29 Sep 2022",,"Major","Task","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","Bug appears occasionally, cannot reproduce
+
+DevTools failed to load source map: Could not load content for chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/browser-polyfill.js.map: System error: net::ERR_FILE_NOT_FOUND
+
+(не успела выгрузить инфу кроме картинки, воспроизвести повторно не удалось)","0"
+"G13-138","group1.3","","Warning on the shop pages","anna_avocado","29 Sep 2022","29 Sep 2022",,"Minor","Task","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+Warning is shown while surfing all the store pages
+
+
+
+**Steps to reproduce:**
+
+1. Open the cart page <https://demowebshop.tricentis.com/cart>
+
+2. Open devtools.
+
+   
+
+**Actual result:**
+
+Warning: DevTools failed to load source map: Could not load content for chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/browser-polyfill.js.map: System error: net::ERR_FILE_NOT_FOUND","0"
+"G13-137","group1.3","","Payment information: error messages remains after returning back from ""confirm order page""","anna_avocado","29 Sep 2022","29 Sep 2022",,"Minor","Task","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+Cards with insufficient funds, stolen cards, transaction not permitted cards are accepted.
+
+
+
+**Pre-conditions:**
+
+An item added to the shopping cart. 4 steps of checkout are completed. Credit card payment method is selected.
+
+
+
+**Steps to reproduce:**
+
+1. Open the payment information link on <https://demowebshop.tricentis.com/onepagecheckout>
+
+2. Fill the card data with invalid data.
+
+3. Click the continue button.
+
+4. Error messages are displayed.
+
+5. Change the card info to the valid <https://docs.assist.ru/pages/viewpage.action?pageId=5767473>
+
+6. Click the continue button. 
+
+7. Confirm order page opens.
+
+8. Click the back button.
+
+   
+
+**Expected result:**
+
+No error messages displayed after returning to the payment information page.
+
+
+
+**Actual result:**
+
+Error messages remains.","0"
+"G13-131","group1.3","","Test credit card with invalid card code is accepted","anna_avocado","29 Sep 2022","29 Sep 2022",,"Normal","Task","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+Test credit card with invalid card code is accepted.
+
+
+
+**Pre-conditions:**
+
+An item added to the shopping cart. 4 steps of checkout are completed. Credit card payment method is selected.
+
+
+
+**Steps to reproduce:**
+
+1. Open the payment information link on <https://demowebshop.tricentis.com/onepagecheckout>
+2. Fill the card code field with invalid code.
+3. Fill the other fields with valid test cards data <https://docs.assist.ru/pages/viewpage.action?pageId=5767473>
+4. Click the continue button.
+
+**Expected result:**
+
+""Wrong card code"" message is displayed.
+
+
+
+**Actual result:**
+
+Redirected to the confirm order page.","0"
+"G13-130","group1.3","","Test credit card with invalid expiration date is accepted","anna_avocado","29 Sep 2022","29 Sep 2022",,"Normal","Task","Open","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+Test credit card with invalid (past) expiration date name is accepted.
+
+
+
+**Pre-conditions:**
+
+An item added to the shopping cart. 4 steps of checkout are completed. Credit card payment method is selected.
+
+
+
+**Steps to reproduce:**
+
+1. Open the payment information link on <https://demowebshop.tricentis.com/onepagecheckout>
+2. Fill the expiration date with a past date (01/2022)
+3. Fill the other fields with valid test cards data <https://docs.assist.ru/pages/viewpage.action?pageId=5767473>
+4. Click the continue button.
+
+**Expected result:**
+
+""Wrong expiration date"" message is displayed.
+
+
+
+**Actual result:**
+
+Redirected to the confirm order page.","0"
+"G13-29","group1.3","","Add customer. Mobile number: limited length","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-82","**Description:**
+
+The mobile number field has  limitation.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+Fill the mobile number field with 500 numbers: 96413623317362852890127864248090026222915037087561380111569512865652564133659836585237695591522996551541635960179984309440481998642791340859368730331955872171591910726956486000251694774173866103440956062703160302791382242257769441159523952551557409772164247350396183072152988188872001734086991383598270254724030010119070713661366398080053234176976239029154868768821090308979967884690608076965975848042972908977909512670004841997687898093432626302798906581388962052562595968802536389379631736562762141
+
+**Expected result:**
+
+No error message occurs.
+
+
+
+**Actual result:**
+
+Only 12 numbers can be insert or printed.","0"
+"G13-7","group1.3","","Testing documentation: Anna Takhtamysheva","anna_avocado","18 Sep 2022","18 Sep 2022",,"Normal","Task","In Progress","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)",,"0"
+"G13-28","group1.3","","Add customer: The address field placeholder differs from the field name ","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-32","**Description:**
+
+The address field  placeholder is ""Enter your address"" instead repeating the field name.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+\-
+
+**Expected result:**
+
+The address field placeholder is ""Address""
+
+
+
+**Actual result:**
+
+The address field placeholder is ""Enter your address""","0"
+"G13-27","group1.3","","Add customer: mandatory fields aren't marked with *","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-32","**Description:**
+
+The mandatory fields aren't marked with \*
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+\-
+
+**Expected result:**
+
+The mandatory fields are marked with \* sign according to specification.
+
+
+
+**Actual result:**
+
+The mandatory fields aren't marked with \* sign according to specification.","0"
+"G13-26","group1.3","","Add customer. Mobile number: incorrect error message for empty field","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-26","**Description:**
+
+Incorrect error message appears after leaving the mobile number field empty.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+1. Click the mobile number field and leave it empty
+
+**Expected result:**
+
+""Mobile must not be blank"" message occurs.
+
+
+
+**Actual result:**
+
+""Mobile no must not be blank"" message occurs.","0"
+"G13-25","group1.3","","Add customer. Mobile number: incorrect error message for characters and special characters (together)","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-29","**Description:**
+
+""Special characters are not allowed"" error message appears after filling the mobile number field with characters and special characters together.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+1. Fill in the mobile number field with characters and special characters: qqq!!!
+
+**Expected result:**
+
+""Characters and special characters are not allowed"" message occurs.
+
+
+
+**Actual result:**
+
+""Special characters are not allowed"" message occurs.","0"
+"G13-22","group1.3","","Add customer. Mobile number: incorrect error message for special characters (dot at the end)","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-23","**Description:**
+
+No error message appears after filling the mobile field with numbers adding dot sign at the end.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+1. Fill in mobile field with numbers, add dot sign at the end: 9999999999.
+
+**Expected result:**
+
+""Special characters are not allowed"" message occurs.
+
+
+
+**Actual result:**
+
+No error message occurs.","0"
+"G13-21","group1.3","","Add customer. Email: incorrect error message for empty field","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-26","**Description:**
+
+Incorrect error message appears after leaving the email field empty.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+1. Click the email field and leave it empty
+
+**Expected result:**
+
+""Email must not be blanc"" message occurs.
+
+
+
+**Actual result:**
+
+""Email-ID must not be blank"" message occurs.","0"
+"G13-20","group1.3","","Add customer. Email: no error message for cyrillic and special characters","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-25","**Description:**
+
+There is no error message for the email field appears for non-latin letters and secial characters if they had @ and domain zone.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+1. Fill the email field with cyrillic and special characters with @ and domain zone: почта!@gmail.com
+
+**Expected result:**
+
+""Email-ID must not be blank"" message occurs.
+
+
+
+**Actual result:**
+
+No message occurs.","0"
+"G13-17","group1.3","","Add customer. Last name: incorrect error message for empty field","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-24","**Description:**
+
+Incorrect error message appears after leaving the larst name field empty.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+1. Click the last name field and leave it empty
+
+**Expected result:**
+
+""Last Name must not be blank"" message occurs.
+
+
+
+**Actual result:**
+
+""Customer name must not be blank"" message occurs.","0"
+"G13-16","group1.3","","Add customer. Last name: incorrect error message for numbers, cyrillic and special characters","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-23","**Description:**
+
+""Special characters"" error message appears after filling the first name field with numbers, cyrillic and special characters.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+1. Fill in the last name field with numbers, cyrillic and special characters: анн@1
+
+
+
+**Expected result:**
+
+""Numbers, Cyrillic and special characters are not allowed"" message occurs.
+
+
+
+**Actual result:**
+
+""Special characters are not allowed"" message occurs.","0"
+"G13-15","group1.3","","Add customer. Last name: incorrect error message for cyrillic","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-22","**Description:**
+
+""Numbers are not allowed"" error message appears after filling the last name field with cyrillic letters.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+1. Fill in the last name field with cyrillic: Иванов
+
+**Expected result:**
+
+""Cyrillic are not allowed"" message occurs.
+
+
+
+**Actual result:**
+
+""Numbers are not allowed"" message occurs.","0"
+"G13-12","group1.3","","Add customer. First name: incorrect error message for empty field","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-12","**Description:**
+
+Incorrect error message appears after leaving the first name field empty.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+1. Click the first name field and leave it empty
+
+
+
+**Expected result:**
+
+""First Name must not be blank"" message occurs.
+
+
+
+**Actual result:**
+
+""Customer name must not be blank"" message occurs.","0"
+"G13-13","group1.3","","Add customer. First name: incorrect error message for cyrillic","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-10","**Description:**
+
+""Numbers are not allowed"" error message appears after filling the first name field with cyrillic letters.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+1. Fill in the first name field with cyrillic: анна
+
+**Expected result:**
+
+""Cyrillic are not allowed"" message occurs.
+
+
+
+**Actual result:**
+
+""Numbers are not allowed"" message occurs.","0"
+"G13-14","group1.3","","Add customer. First name: incorrect error message for numbers, cyrillic and special characters","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-11","**Description:**
+
+""Special characters"" error message appears after filling the first name field with numbers, cyrillic and special characters.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+1. Fill in the first name field with numbers, cyrillic and special characters: ф1!
+
+**Expected result:**
+
+""Numbers, Cyrillic and special characters are not allowed"" message occurs.
+
+
+
+**Actual result:**
+
+""Special characters are not allowed"" message occurs.","0"
+"G13-11","group1.3","","Add customer. Reset button: error message doesn't disappear after clicking the reset button","anna_avocado","18 Sep 2022","18 Sep 2022",,"Minor","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","G11-2","**Description:**
+
+Error messages that appears after filling the mandatory fields with incorrect values, still remains after clicking the reset button.
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/addcustomer.php>
+
+
+
+**Steps to reproduce:**
+
+1. Fill in the mandatory fields with incorrect values.
+2. Click the reset button.
+
+
+
+**Expected result:**
+
+Error messages disappears.
+
+
+
+**Actual result:**
+
+Error messages remains.","0"
+"G13-10","group1.3","","Homepage. Side menu: ""Add tariff plans"" button name differs from the main page  button name","anna_avocado","18 Sep 2022","18 Sep 2022",,"Normal","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+Side menu button should be named as the main page button (""Add tariff plan""),
+
+
+
+**Pre-conditions:**
+
+Open the side (hamburger) menu on <https://demo.guru99.com/telecom/index.html>
+
+
+
+**Expected result:**
+
+The button name is ""Add tariff plan"".
+
+
+
+**Actual result:**
+
+The button name is ""Add tariff plans"".
+
+
+","0"
+"G13-9","group1.3","","Homepage. Side menu: ""Delete customer"" button is not created","anna_avocado","18 Sep 2022","18 Sep 2022",,"Normal","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+There is no ""Delete customer"" button on the homepage side menu
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/index.html>
+
+
+
+**Expected result:**
+
+""Delete customer"" button is present.
+
+
+
+**Actual result:**
+
+There is no ""Delete customer"" button on the homepage","0"
+"G13-8","group1.3","","Homepage: ""Delete customer"" button is not created","anna_avocado","18 Sep 2022","18 Sep 2022",,"Normal","Bug","In Progress","Unassigned","Нет версии исправления",,,,"No environment","No qase tc # (only for bug)","**Description:**
+
+There is no ""Delete customer"" button on the homepage 
+
+
+
+**Pre-conditions:**
+
+Open <https://demo.guru99.com/telecom/index.html>
+
+
+
+**Expected result:**
+
+""Delete customer"" button is present.
+
+
+
+**Actual result:**
+
+There is no ""Delete customer"" button on the homepage","0"
